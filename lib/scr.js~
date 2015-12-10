@@ -1,1 +1,0 @@
-document.getElementsByName('username')[0].value = 'moo';document.getElementsByName('password')[0].value = 'moo';document.forms[0].submit();
