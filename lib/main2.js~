@@ -1,0 +1,20 @@
+var url = require("sdk/simple-prefs").prefs.url;
+var data = require("sdk/self").data;
+var button = require("sdk/ui/button/action").ActionButton({
+  id: "style-tab",
+  label: "Style Tab",
+  icon: "./icon-16.png",
+  onClick: function() {
+    var tabs = require("sdk/tabs");
+tabs.open({
+  url: url,
+  onReady: runScript
+});
+ 
+function runScript(tab) {
+  tab.attach({
+    contentScriptFile: data.url("jquery.js")
+  });
+}
+  }
+});

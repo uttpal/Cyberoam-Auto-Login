@@ -1,0 +1,36 @@
+{
+  "name": "cyberoam_login",
+  "title": "Cyberoam Auto Login",
+  "id": "uttpal25993@gmail.com",
+  "description": "1 click Cyberoam login",
+  "author": "Kumar Uttpal",
+  "license": "MPL 2.0",
+  "version": "1.0",
+
+"preferences": [{
+        "name": "url",
+        "title": "Cyberoam URL",
+        "description": "Cyberoam URL",
+        "type": "string",
+        "value": "http://172.22.2.2:8090/httpclient.html"
+    },
+    {
+        "name": "user",
+        "title": "Your Username",
+        
+        "type": "string",
+        "value": "username"
+
+    },
+    {
+        "name": "pass",
+        "title": "Your Password",
+        
+        "type": "string",
+        "value": "password"
+
+    }
+]
+
+}
+
